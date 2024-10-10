@@ -1,0 +1,120 @@
+/* UserList.css */
+
+/* Background styling for the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4799d3, #feb47b); /* Gradient background */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the user list */
+.user-list-container {
+  max-width: 900px;                /* Set max width for the table */
+  width: 100%;                     /* Full width on smaller screens */
+  padding: 30px 40px;              /* Padding around the container */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  border-radius: 10px;             /* Rounded corners */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth transition on hover */
+}
+
+.user-list-container:hover {
+  transform: translateY(-10px);    /* Slight lift on hover */
+}
+
+.user-list-container h2 {
+  text-align: center;              /* Center the heading */
+  color: #333;                     /* Dark heading color */
+  font-size: 28px;                 /* Larger font size */
+  margin-bottom: 20px;             /* Space below heading */
+  font-weight: 600;
+  text-transform: uppercase;       /* Uppercase text */
+  letter-spacing: 1.5px;           /* Add letter spacing */
+}
+
+/* Table styling */
+table {
+  width: 100%;                     /* Full width of the container */
+  border-collapse: collapse;       /* Collapse borders */
+  margin-bottom: 20px;             /* Space below the table */
+}
+
+th, td {
+  padding: 12px 15px;              /* Padding inside table cells */
+  border-bottom: 1px solid #ddd;   /* Light border below each row */
+  text-align: left;                /* Align text to the left */
+  font-size: 16px;
+}
+
+th {
+  background-color: #007bff;       /* Blue background for table headers */
+  color: white;                    /* White text for headers */
+  text-transform: uppercase;       /* Uppercase text in headers */
+}
+
+td img {
+  width: 50px;                     /* Size for user avatars */
+  height: 50px;
+  border-radius: 50%;              /* Make avatars circular */
+}
+
+/* Button styling */
+button {
+  padding: 10px 15px;              /* Padding inside buttons */
+  background-color: #007bff;       /* Blue background */
+  color: white;                    /* White text */
+  border: none;                    /* Remove border */
+  border-radius: 4px;              /* Rounded corners */
+  cursor: pointer;                 /* Pointer cursor on hover */
+  font-size: 14px;                 /* Button font size */
+  font-weight: bold;
+  text-transform: uppercase;       /* Uppercase text */
+  margin: 5px;                     /* Space between buttons */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transition */
+}
+
+button:hover {
+  background-color: #0056b3;       /* Darker blue on hover */
+  transform: translateY(-2px);     /* Slight lift on hover */
+}
+
+button:disabled {
+  background-color: #a0a0a0;       /* Gray color when disabled */
+  cursor: not-allowed;             /* Not-allowed cursor for disabled state */
+}
+
+/* Pagination buttons */
+button.pagination {
+  padding: 10px 20px;              /* Larger padding for pagination buttons */
+  margin-top: 20px;                /* Space above pagination buttons */
+}
+
+button.pagination:hover {
+  background-color: #0056b3;       /* Darker shade on hover for pagination */
+}
+
+button.pagination:disabled {
+  background-color: #a0a0a0;       /* Gray when disabled */
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .user-list-container {
+    width: 95%;                    /* Full width on smaller screens */
+    margin: 20px;
+  }
+
+  table, th, td {
+    font-size: 14px;               /* Smaller font size for mobile */
+  }
+
+  button {
+    font-size: 12px;               /* Smaller button text on mobile */
+    padding: 8px 10px;             /* Smaller button padding on mobile */
+  }
+}

@@ -1,0 +1,186 @@
+/* Auth.css */
+
+/* Container for the login form */
+.auth-container {
+  max-width: 400px;                /* Set max width for the form */
+  margin: 100px auto;              /* Center the form on the page */
+  padding: 20px 30px;              /* Padding around the form */
+  border: 1px solid #ddd;          /* Light border */
+  border-radius: 10px;             /* Rounded corners */
+  background-color: #ffffff;       /* White background */
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1); /* Subtle shadow */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.auth-container:hover {
+  transform: scale(1.05);          /* Slight zoom on hover */
+}
+
+.auth-container h2 {
+  text-align: center;              /* Center the heading */
+  color: #333;                     /* Dark heading color */
+  font-size: 24px;                 /* Font size for heading */
+  margin-bottom: 20px;             /* Space below heading */
+  font-weight: 600;
+}
+
+/* Form styling */
+.auth-container form {
+  display: flex;
+  flex-direction: column;          /* Stack inputs vertically */
+}
+
+.auth-container input {
+  padding: 12px;                   /* Padding inside inputs */
+  margin-bottom: 15px;             /* Space between inputs */
+  border: 1px solid #ccc;          /* Light border */
+  border-radius: 6px;              /* Rounded corners */
+  font-size: 16px;                 /* Font size for input text */
+  transition: border-color 0.3s ease; /* Transition for focus effect */
+}
+
+.auth-container input:focus {
+  border-color: #007bff;           /* Change border color on focus */
+  outline: none;                   /* Remove default outline */
+}
+
+/* Button styling */
+.auth-container button {
+  padding: 12px;                   /* Padding inside the button */
+  background-color: #007bff;       /* Blue background */
+  color: white;                    /* White text */
+  border: none;                    /* Remove border */
+  border-radius: 6px;              /* Rounded corners */
+  cursor: pointer;                 /* Pointer cursor on hover */
+  font-size: 16px;                 /* Button font size */
+  font-weight: bold;
+  transition: background-color 0.3s ease; /* Smooth transition */
+}
+
+.auth-container button:hover {
+  background-color: #0056b3;       /* Darker blue on hover */
+}
+
+.auth-container button:disabled {
+  background-color: #a0a0a0;       /* Gray color when disabled */
+  cursor: not-allowed;             /* Not-allowed cursor for disabled state */
+}
+
+.auth-container p {
+  color: rgb(0, 145, 255);                      /* Error message color */
+  text-align: center;              /* Center the error message */
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-container {
+    width: 90%;                    /* Full width on smaller screens */
+    margin: 50px auto;
+  }
+}
+
+
+
+/* Auth.css */
+
+/* Background styling for the entire page */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Arial', sans-serif;
+  background: linear-gradient(to right, #4799d3, #feb47b); /* Gradient background */
+  height: 100vh; /* Full viewport height */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Container for the login form */
+.auth-container {
+  max-width: 400px;                /* Set max width for the form */
+  width: 100%;                     /* Full width on small screens */
+  padding: 30px 40px;              /* Padding around the form */
+  border-radius: 10px;             /* Rounded corners */
+  background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2); /* Larger shadow for depth */
+  transition: all 0.3s ease-in-out; /* Smooth transition for hover effects */
+}
+
+.auth-container:hover {
+  transform: translateY(-10px);    /* Slight lift on hover */
+}
+
+.auth-container h2 {
+  text-align: center;              /* Center the heading */
+  color: #333;                     /* Dark heading color */
+  font-size: 26px;                 /* Larger font size for heading */
+  margin-bottom: 20px;             /* Space below heading */
+  font-weight: 600;
+  text-transform: uppercase;       /* Make heading text uppercase */
+  letter-spacing: 1.5px;           /* Add letter spacing */
+}
+
+/* Form styling */
+.auth-container form {
+  display: flex;
+  flex-direction: column;          /* Stack inputs vertically */
+}
+
+.auth-container input {
+  padding: 12px;                   /* Padding inside inputs */
+  margin-bottom: 15px;             /* Space between inputs */
+  border: 1px solid #ddd;          /* Light border */
+  border-radius: 6px;              /* Rounded corners */
+  font-size: 16px;                 /* Font size for input text */
+  transition: border-color 0.3s ease; /* Transition for focus effect */
+}
+
+.auth-container input:focus {
+  border-color: #007bff;           /* Change border color on focus */
+  outline: none;                   /* Remove default outline */
+  box-shadow: 0 0 5px rgba(0, 123, 255, 0.5); /* Glow effect on focus */
+}
+
+/* Button styling */
+.auth-container button {
+  padding: 12px;                   /* Padding inside the button */
+  background-color: #007bff;       /* Blue background */
+  color: white;                    /* White text */
+  border: none;                    /* Remove border */
+  border-radius: 6px;              /* Rounded corners */
+  cursor: pointer;                 /* Pointer cursor on hover */
+  font-size: 16px;                 /* Button font size */
+  font-weight: bold;
+  text-transform: uppercase;       /* Uppercase button text */
+  letter-spacing: 1px;             /* Add letter spacing */
+  transition: background-color 0.3s ease, transform 0.3s ease; /* Smooth transitions */
+}
+
+.auth-container button:hover {
+  background-color: #0056b3;       /* Darker blue on hover */
+  transform: translateY(-2px);     /* Slight lift on hover */
+}
+
+.auth-container button:disabled {
+  background-color: #a0a0a0;       /* Gray color when disabled */
+  cursor: not-allowed;             /* Not-allowed cursor for disabled state */
+}
+
+.auth-container p {
+  color: rgb(17, 0, 255);                      /* Error message color */
+  text-align: center;              /* Center the error message */
+  font-size: 14px;
+  margin-top: -10px;
+  margin-bottom: 20px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .auth-container {
+    width: 90%;                    /* Full width on smaller screens */
+    margin: 50px auto;
+  }
+}
